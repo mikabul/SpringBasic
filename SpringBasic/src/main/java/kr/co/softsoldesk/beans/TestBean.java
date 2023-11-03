@@ -1,60 +1,61 @@
 package kr.co.softsoldesk.beans;
 
 public class TestBean {
-
+	
 	private int data1;
 	private double data2;
-	private String data3;
+	private boolean data3;
+	private String data4;
+	private DataBean data5;
+	private DataBean data6;
 
-	public TestBean() {
-		System.out.println("TestBean의 기본 생성자");
-		this.data1 = 0;
-		this.data2 = 0.0;
-		this.data3 = null;
+	public int getData1() {
+		return data1;
 	}
 
-	/*
-	 * #1-1 public void printData() { System.out.printf("data1 : %d\n", data1);
-	 * System.out.printf("data2 : %f\n", data2); System.out.printf("data3 : %s\n",
-	 * data3); }
-	 */
-
-	// -----------------------------------------------
-	// #2-1
-	public TestBean(int data1) {
-		System.out.println("TestBean의 생성자 : int 변수 1개");
+	public void setData1(int data1) {
 		this.data1 = data1;
-		this.data2 = 0.0;
-		this.data3 = null;
 	}
 
-	// #3-1
-	public TestBean(double data2) {
-		System.out.println("TestBean의 생성자 : double 변수 1개");
-		this.data1 = 0;
+	public double getData2() {
+		return data2;
+	}
+
+	public void setData2(double data2) {
 		this.data2 = data2;
-		this.data3 = null;
 	}
 
-	// 4-1
-	public TestBean(String data3) {
-		System.out.println("TestBean의 생성자 : String 변수 1개");
-		this.data1 = 0;
-		this.data2 = 0.0;
+	public boolean isData3() {
+		return data3;
+	}
+
+	public void setData3(boolean data3) {
 		this.data3 = data3;
 	}
 
-	// 5-1
-	public TestBean(int data1, double data2, String data3) {
-		System.out.println("TestBean의 생성자 : 변수 3개");
-		this.data1 = data1;
-		this.data2 = data2;
-		this.data3 = data3;
+	public String getData4() {
+		return data4;
 	}
 
-	public void printData() {
-		System.out.printf("data1 : %d\n", data1);
-		System.out.printf("data2 : %f\n", data2);
-		System.out.printf("data3 : %s\n", data3);
+	public void setData4(String data4) {
+		this.data4 = data4;
 	}
+
+	public DataBean getData5() {
+		return data5;
+	}
+
+	public void setData5(DataBean data5) {
+		this.data5 = data5;
+	}
+
+	public DataBean getData6() {
+		return data6;
+	}
+
+	public void setData6(DataBean data6) {
+		this.data6 = data6;
+	}
+	
+	
 }
